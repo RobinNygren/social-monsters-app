@@ -1,5 +1,7 @@
-import { Slot } from "expo-router";
 import { createDrawerNavigator } from "@react-navigation/drawer";
+import SwitchAccount from "./switchAccount";
+import AddMonster from "./addMonster";
+import TabsLayout from "./(tabs)/_layout";
 
 const Drawer = createDrawerNavigator();
 
@@ -9,23 +11,23 @@ export default function RootLayout() {
       <Drawer.Screen
         name="switchAccount"
         options={{ title: "Switch Account" }}
-        component={Slot}
+        component={SwitchAccount}
       />
       <Drawer.Screen
-        name="(tabs)"
+        name="Home"
         options={{ title: "Home" }}
-        component={Slot}
+        component={TabsLayout}
       />
       <Drawer.Screen
         name="addMonster"
         options={{ title: "Add Monster" }}
-        component={Slot}
+        component={AddMonster}
       />
-      <Drawer.Screen
+      {/* <Drawer.Screen
         name="monster"
         options={{ title: "Monster Details" }}
-        component={Slot}
-      />
+        component={Monster}
+      /> */}
     </Drawer.Navigator>
   );
 }
