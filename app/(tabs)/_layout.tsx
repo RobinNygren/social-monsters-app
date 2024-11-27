@@ -1,49 +1,18 @@
-import { Tabs } from "expo-router";
-import { Ionicons } from "@expo/vector-icons";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { Slot } from "expo-router";
 
-export default function TabLayout() {
+const Tab = createBottomTabNavigator();
+
+export default function TabsLayout() {
   return (
-    <Tabs
-      screenOptions={{
-        tabBarActiveTintColor: "#ffd33d",
-        headerStyle: {
-          backgroundColor: "#25292e",
-        },
-        headerShadowVisible: false,
-        headerTintColor: "#fff",
-        tabBarStyle: {
-          backgroundColor: "#25292e",
-        },
-      }}
-    >
-      <Tabs.Screen
-        name="index"
-        options={{
-          title: "Home",
-          tabBarIcon: ({ color, focused }) => (
-            <Ionicons
-              name={focused ? "home-sharp" : "home-outline"}
-              color={color}
-              size={24}
-            />
-          ),
-        }}
+    <Tab.Navigator>
+      <Tab.Screen name="feed" options={{ title: "Feed" }} component={Slot} />
+      <Tab.Screen
+        name="monsters"
+        options={{ title: "Monsters" }}
+        component={Slot}
       />
-      <Tabs.Screen
-        name="about"
-        options={{
-          title: "About",
-          tabBarIcon: ({ color, focused }) => (
-            <Ionicons
-              name={
-                focused ? "information-circle" : "information-circle-outline"
-              }
-              color={color}
-              size={24}
-            />
-          ),
-        }}
-      />
-    </Tabs>
+      <Tab.Screen name="post" options={{ title: "Post" }} component={Slot} />
+    </Tab.Navigator>
   );
 }
