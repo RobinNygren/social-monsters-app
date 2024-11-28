@@ -20,10 +20,20 @@ export type Post = {
   text: string;
   authorId: number; // Monster som skrev inlägget
   comments: Comment[];
+  likes: number;
 };
 
 // En typ för hela API:ets data
 export type APIResponse = {
   monsters: Monster[];
   posts: Post[];
+};
+
+export type PostRouteParams = {
+  id: number; // ID för inlägget
+};
+
+export type RootStackParamList = {
+  Feed: undefined; // Feed har inga parametrar
+  Post: { id: number }; // Post tar emot id som parameter
 };

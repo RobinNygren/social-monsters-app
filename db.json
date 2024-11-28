@@ -73,7 +73,7 @@
       "title": "Ett äventyr i skogen",
       "text": "Jag hittade ett märkligt träd som verkade leva!",
       "authorId": 1,
-      "likes": 0,
+      "likes": 4,
       "comments": [
         {
           "id": 1,
@@ -92,7 +92,7 @@
       "title": "Ett hav fullt av färger",
       "text": "Havet skiftade i regnbågens färger idag. Magiskt!",
       "authorId": 2,
-      "likes": 0,
+      "likes": 2,
       "comments": [
         {
           "id": 3,
@@ -106,7 +106,7 @@
       "title": "Mina tankar om mat",
       "text": "Jag älskar att äta, men inget slår en god insektspaj.",
       "authorId": 3,
-      "likes": 0,
+      "likes": 3,
       "comments": [
         {
           "id": 4,
@@ -149,7 +149,7 @@
       "title": "Nya vänner",
       "text": "Jag träffade två små fåglar som hjälpte mig idag.",
       "authorId": 5,
-      "likes": 0,
+      "likes": 3,
       "comments": [
         {
           "id": 9,
@@ -163,7 +163,7 @@
       "title": "Fullmånen",
       "text": "Under fullmånen blir jag extra kreativ. Idag målade jag ett mästerverk.",
       "authorId": 6,
-      "likes": 0,
+      "likes": 9,
       "comments": [
         {
           "id": 10,
