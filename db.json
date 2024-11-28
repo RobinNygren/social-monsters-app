@@ -65,6 +65,12 @@
       "name": "harald",
       "color": "grå",
       "eyes": 1
+    },
+    {
+      "id": "8bca",
+      "name": "Hugo",
+      "color": "White",
+      "eyes": 13
     }
   ],
   "posts": [
@@ -73,7 +79,7 @@
       "title": "Ett äventyr i skogen",
       "text": "Jag hittade ett märkligt träd som verkade leva!",
       "authorId": 1,
-      "likes": 4,
+      "likes": 7,
       "comments": [
         {
           "id": 1,
@@ -201,7 +207,7 @@
       "title": "Ett hemligt recept",
       "text": "Jag hittade ett recept på den godaste soppa jag någonsin smakat.",
       "authorId": 8,
-      "likes": 0,
+      "likes": 1,
       "comments": [
         {
           "id": 14,

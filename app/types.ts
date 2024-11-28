@@ -36,4 +36,5 @@ export type PostRouteParams = {
 export type RootStackParamList = {
   Feed: undefined; // Feed har inga parametrar
   Post: { id: number }; // Post tar emot id som parameter
+  Home: undefined;
 };

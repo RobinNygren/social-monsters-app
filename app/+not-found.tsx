@@ -1,13 +1,19 @@
 import { View, Text, StyleSheet, Button } from "react-native";
-import { useRouter } from "expo-router";
+import { useNavigation } from "@react-navigation/native";
+import { RootStackParamList } from "./types";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
 export default function NotFoundScreen() {
-  const router = useRouter();
+  const navigation =
+    useNavigation<NativeStackNavigationProp<RootStackParamList, "Home">>();
 
   return (
     <View style={styles.container}>
       <Text style={styles.text}>404 - Page Not Found</Text>
-      <Button title="Go Home" onPress={() => router.push("/")} />
+      <Button
+        title="Go Home"
+        onPress={() => navigation.navigate("Home")} // Navigera till "Home" i din DrawerNavigator
+      />
     </View>
   );
 }
