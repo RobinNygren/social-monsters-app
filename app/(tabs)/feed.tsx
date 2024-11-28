@@ -50,7 +50,7 @@ export default function Feed() {
 }
 
 const styles = StyleSheet.create({
-  container: { padding: 10 },
+  container: { flex: 1, padding: 10 },
   header: { fontSize: 24, fontWeight: "bold", marginBottom: 10 },
   postCard: { padding: 10, borderBottomWidth: 1, borderColor: "#ccc" },
   title: { fontSize: 18, fontWeight: "bold" },
