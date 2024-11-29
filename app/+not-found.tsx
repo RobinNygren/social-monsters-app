@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet, Button } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { RootStackParamList } from "./types";
+import { RootStackParamList } from "./types/types";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
 export default function NotFoundScreen() {

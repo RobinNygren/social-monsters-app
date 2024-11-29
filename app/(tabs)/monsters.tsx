@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { View, Text, FlatList, StyleSheet } from "react-native";
-import apiClient from "../apiClient";
-import { Monster } from "../types";
+import apiClient from "../utils/apiClient";
+import { Monster } from "../types/types";
 
 export default function Monsters() {
   const [monsters, setMonsters] = useState<Monster[]>([]);

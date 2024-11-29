@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { View, Text } from "react-native";
 import { useRoute, RouteProp } from "@react-navigation/native";
-import { Post, PostRouteParams } from "../types";
-import apiClient from "../apiClient";
+import { Post, PostRouteParams } from "../types/types";
+import apiClient from "../utils/apiClient";
 
 export default function PostScreen() {
   const route = useRoute<RouteProp<{ params: PostRouteParams }, "params">>();

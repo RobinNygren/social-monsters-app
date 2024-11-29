@@ -7,8 +7,8 @@ import {
   Pressable,
   Button,
 } from "react-native";
-import apiClient from "../apiClient";
-import { Post, RootStackParamList } from "../types";
+import apiClient from "../utils/apiClient";
+import { Post, RootStackParamList } from "../types/types";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useNavigation } from "expo-router";
 

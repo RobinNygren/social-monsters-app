@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { View, Text, TextInput, Button, StyleSheet } from "react-native";
-import apiClient from "./apiClient";
+import apiClient from "../utils/apiClient";
 
 export default function AddMonster() {
   const [name, setName] = useState("");
